@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    height: 10vh;
+    background: #845fc2;
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    flex: 1;
+
+}
+
+.logo img{
+    height: 8vh;
+    margin-right: 30px;
+    margin-left: 20px;
+    z-index: 4;
+}
+.nav-links{
+    flex: 2;
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.nav-button{
+    border: 1px solid #faf871;
+    background: transparent;
+    padding: 10px;
+    color: #faf871;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+body{
+    background-color: #845fc2;
+}
+
+main{
+    margin-top: 2vh;
+    padding-top: 2vh;
+    margin-bottom: 10vh;
+}
+
+.landing{
+    height: 90vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    flex: 2;
+    
+}
+
+.info h1{
+    font-weight: 700;
+    font-size: 4em;
+    color: white;
+}
+
+.info p{
+    color: white;
+}
+
+.info button{
+    margin-top: 20px;
+    width: 250px;
+    height: 40px;
+    background: #ff5e78;
+    color: white;
+    border: 1px solid #ff5e78;
+}
+
+.image{
+    flex: 1;
+}
+
+
+.image img{
+    width: 40vw;
+}
+
+.background{
+    display: none;
+    background: url("../images/assistant.png");
+    
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+footer{
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+
+    margin: auto;
+    padding: 20px;
+    background: #ff5e78;
+}
+
+footer img{
+    height : 5vh;
+}
+
+.logo-inf{
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-inf{
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.contact-inf a{
+    color: #faf871; 
+}
+
+.follow-inf {
+    flex: 1;
+}
+
+
+.follow-inf ul{
+    display: flex;
+    list-style: none;
+
+}
+
+.follow-inf ul li{
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+
+
+.follow-inf ul li i{
+    color: #faf871;   
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    nav{
+        position: relative;
+    }
+
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+    .nav-links{
+        padding-top: 10vh;
+        justify-content:flex-start;
+        position: fixed;
+        background: #845fc2;;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(1px at 90% -10%);
+        -webkit-clip-path: circle(1px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+
+        
+    }
+    .nav-links.open{
+        clip-path: circle(1500px at 90% -10%);
+        -webkit-clip-path: circle(1500px at 90% -10%);
+        pointer-events: all;
+    }
+
+    main{
+        overflow: hidden;
+    }
+
+    .landing{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .nav{
+        z-index: 4;
+    }
+
+    .nav-links li{
+        opacity: 0;
+        margin-left: 100px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-links li a{
+        font-size: 25px;
+    }
+
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.3s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.5s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.6s;
+    }
+    li.fade{
+        opacity: 1;
+    }
+
+    .image img{
+        width: 80vw;
+    }
+
+    .info h1{
+        font-size: 2.5em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:flex-start;
+    }
+
+  
+   
+}
