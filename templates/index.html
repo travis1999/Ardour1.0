@@ -7,6 +7,12 @@
     <link href="../static/styles/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/styles/style.css"/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='favicon/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='favicon/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='favicon/favicon-16x16.png')}}">
+    <link rel="manifest" href="{{url_for('static', filename='favicon/site.webmanifest')}}">
+
     <title>Ardour</title>
 
 </head>
@@ -30,11 +36,7 @@
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Order Now</a></li>
-                <li><a href="#">
-                    <button class="nav-button">
-                        login/signup
-                    </button>
-                </a></li>
+                <li><button class="nav-button"><a href="#">login/signup</a></button></li>
             </ul>
             
         </nav>
