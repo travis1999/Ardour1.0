@@ -45,6 +45,10 @@ nav{
 
 }
 
+.nav-links li a:hover{
+    border-bottom: 1px solid #faf871;
+}
+
 .nav-button{
     border: 1px solid #faf871;
     background: transparent;
