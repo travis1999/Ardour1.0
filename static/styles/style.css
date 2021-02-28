@@ -9,6 +9,7 @@ nav{
     height: 10vh;
     background: #845fc2;
     display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .logo{
@@ -26,6 +27,7 @@ nav{
     margin-left: 20px;
     z-index: 4;
 }
+
 .nav-links{
     flex: 2;
     display: flex;
@@ -34,42 +36,29 @@ nav{
     height: 100%;
     justify-content: space-around;
     align-items: center;
-
-
 }
 
 .nav-links li a{
     color: white;
     text-decoration: none;
     font-size: 16px;
-
 }
 
 .nav-links li a:hover{
     border-bottom: 1px solid #faf871;
 }
 
-.nav-button{
-    border: none;
-    background: #faf871;
 
-    padding: 8px;
-    cursor: pointer;
-}
-
-.nav-button a{
+.login-btn{
+    padding: 10px;
+    background:#faf871;
     color: black !important;
-    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-bottom: none !important;
 }
 
-.nav-button:hover{
-    background: #ff5e78;
-    color: #faf871 !important;
-}
-.nav-button a:hover{
-    border-bottom: none !important;
-    color: #faf871 !important;
-    background: #ff5e78;
+.login-btn:hover{
+    background-color: #ff5e78;
 }
 
 body{
@@ -87,6 +76,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -95,6 +85,7 @@ main{
     flex-direction: column;
     margin: 20px;
     flex: 2;
+    
     
 }
 
@@ -124,6 +115,7 @@ main{
 
 .image img{
     width: 40vw;
+    
 }
 
 .background{
@@ -196,6 +188,31 @@ footer img{
 
 .follow-inf ul li i{
     color: #faf871;   
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(66, 65, 65);
+    border-radius: 5px;
+  }
+
+/* info */
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 
