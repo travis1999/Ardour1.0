@@ -1,46 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="../static/styles/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../static/styles/style.css"/>
+{% extends "template.html" %}
+{% block content %}
 
-    <link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='favicon/apple-touch-icon.png')}}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='favicon/favicon-32x32.png')}}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='favicon/favicon-16x16.png')}}">
-    <link rel="manifest" href="{{url_for('static', filename='favicon/site.webmanifest')}}">
-
-    <title>Ardour</title>
-
-</head>
-<body>
-
-<header>
-        <nav>
-            <div class="logo">
-                <img src="../static/images/white_logo.png" alt="logo">
-                <h2>Ardour</h2>
-            </div>
-
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="{{url_for('home')}}">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Order Now</a></li>
-                <li><button class="nav-button"><a href="#">login/signup</a></button></li>
-            </ul>
-            
-        </nav>
-</header>
 <main>
     <section class="landing">
         <div class="info">
@@ -58,7 +18,7 @@
         </div>
     </section>
 
-    <script src="../static/js/app.js"></script>
+    
 </main>
 
 <footer>
@@ -92,6 +52,5 @@
     </div>
 
 </footer>
-    
-</body>
-</html>
+
+{% endblock %}

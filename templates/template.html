@@ -32,10 +32,10 @@
 
             <ul class="nav-links">
                 <li><a href="{{url_for('home')}}">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Order Now</a></li>
-                <li><button class="nav-button"><a href="#">login/signup</a></button></li>
+                <li><a href="{{url_for('services')}}">Services</a></li>
+                <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+                <li><a href="{{url_for('order')}}">Order Now</a></li>
+                <li><a class="login-btn" href="{{url_for('login')}}"> login/signup</a></li>
             </ul>
             
         </nav>
@@ -43,5 +43,6 @@
     {% block content %}
     
     {% endblock %}
+    <script src="../static/js/app.js"></script>
 </body>
 </html>
