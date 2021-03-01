@@ -1,5 +1,92 @@
 {% extends "template.html" %}
 {% block content %}
 
+<div class="head">
+    <h1>Our Services</h1>
+    <p>Some fancy text over here</p>
+</div>
+
+<div class="services">
+    <div class="service">
+        <div class="service-icon">
+            <img src="../static/images/illustrations/web.png" alt="">
+        </div>
+        <h2>Website and Blog Design</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, deserunt iusto quam nisi tempore quibusdam exercitationem, alias natus fugit quae vero quaerat nulla autem perferendis, similique magni pariatur. Itaque, voluptatem.
+        </p>
+
+    </div>
+
+    <div class="service">
+        <div class="service-icon">
+            <img src="../static/images/illustrations/email.png" alt="">
+        </div>
+        <h2>Email Management</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, deserunt iusto quam nisi tempore quibusdam exercitationem, alias natus fugit quae vero quaerat nulla autem perferendis, similique magni pariatur. Itaque, voluptatem.
+        </p>
+
+    </div>
+
+    <div class="service">
+        <div class="service-icon">
+            <img src="../static/images/illustrations/travel.png" alt="">
+        </div>
+        <h2>Travel Arrengements</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, deserunt iusto quam nisi tempore quibusdam exercitationem, alias natus fugit quae vero quaerat nulla autem perferendis, similique magni pariatur. Itaque, voluptatem.
+        </p>
+
+    </div>
+</div>
+
+<div class="services">
+    <div class="service">
+        <div class="service-icon">
+            <img src="../static/images/illustrations/shopping.png" alt="">
+        </div>
+        <h2>Purchasing Supplies and Equipment</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, deserunt iusto quam nisi tempore quibusdam exercitationem, alias natus fugit quae vero quaerat nulla autem perferendis, similique magni pariatur. Itaque, voluptatem.
+        </p>
+
+    </div>
+
+    <div class="service">
+        <div class="service-icon">
+            <img src="../static/images/illustrations/maintenance.png" alt="">
+        </div>
+        <h2>Website and Blog maintenance</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, deserunt iusto quam nisi tempore quibusdam exercitationem, alias natus fugit quae vero quaerat nulla autem perferendis, similique magni pariatur. Itaque, voluptatem.
+        </p>
+
+    </div>
+
+    <div class="service">
+        <div class="service-icon">
+            <img src="../static/images/illustrations/graphic.png" alt="">
+        </div>
+        <h2>Graphic Design</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, deserunt iusto quam nisi tempore quibusdam exercitationem, alias natus fugit quae vero quaerat nulla autem perferendis, similique magni pariatur. Itaque, voluptatem.
+        </p>
+
+    </div>
+</div>
+
+<div class="other-services">
+    <h1>All Services</h1>
+    <ul class="services-list">
+        {% for n in service_list %}
+        <li>{{n}}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+</div>
+
+
 
 {% endblock %}

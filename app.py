@@ -1,5 +1,5 @@
 from flask import Flask, render_template, url_for, redirect
-
+from data import services as s_list
 
 app = Flask(__name__)
 
@@ -28,7 +28,7 @@ def favicon():
 
 @app.route('/services')
 def services():
-    return render_template("services.html")
+    return render_template("services.html", service_list=s_list)
 
 
 @app.route('/contact')
