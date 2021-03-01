@@ -54,6 +54,8 @@ nav{
     background:#ffb964;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-bottom: none !important;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .login-btn:hover{
@@ -151,6 +153,7 @@ footer{
 
     margin: auto;
     padding: 20px;
+    
     background:#ff5e78;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     
@@ -273,6 +276,51 @@ footer img{
     font-size: 40px;
 }
 
+/* form */
+
+form{
+    width: 60%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 10%);
+    margin-bottom: 5%;
+  }
+  
+  form label{
+      color: white;
+  
+  }
+  
+  
+  input[type=text], input[type=password], input[type=email], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border: none;
+  }
+
+  textarea{
+      height: 30vh;
+      min-width: 100%;
+      max-width: 100%;
+  }
+  
+  
+  input[type="submit"] {
+    background-color:#ffb964;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  
 
 @media screen and (max-width: 1400px){
     .info h1{

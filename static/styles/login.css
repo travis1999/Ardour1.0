@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #845fc2;
+    background: linear-gradient(to left,  #845fc2, #270a4e);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.login-page{
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    align-self: center;
+    background: #58398d;
+}
+
+.illustration{
+    flex: 2;
+    display: flex;
+    background: rgb(243 232 226);;
+    flex-direction: column;
+    overflow: hidden;
+    background: url(../images/illustrations/team_work.jpg);
+    background-size: cover;
+
+}
+
+.logo-inf{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 3vw;
+    margin: 30px;
+}
+
+.illustration-image{
+    width: 100%;
+    margin: auto;
+   
+}
+
+.login-form{
+    flex: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.login-form h2{
+    font-size: 40px;
+}
+
+.login-form p{
+    font-weight: 400;
+}
+
+.login-form dd, .login-form dt{
+    text-align: center;
+    width: 100%;
+}
+
+.login{
+    width: 100%;
+}
+
+.login-form input{
+    width: 70%;
+    height: 35px;
+    margin-bottom: 30px;
+    border: none;
+    color: white;
+    background: #845fc2;
+}
+
+.btn{
+    width: 60% !important;
+    background-color: #eb7f20 !important;
+    
+}
+.login-form input:focus{
+    border: none;
+}
+
+a{
+    color: #eb7f20;
+}
+
+dt{
+    margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 768px){
+    .illustration{
+        display: none;
+    }
+
+    .login-page{
+        display: flex;
+        width: 95%;
+        background: #270a4e;
+}

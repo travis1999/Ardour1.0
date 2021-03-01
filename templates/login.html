@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles/login.css">
     <title>Ardour login</title>
 </head>
 <body>
+    {% from "_formhelpers.html" import render_field %}
+
+    <div class="login-page">
+        <div class="illustration">
+            <div class="logo-inf">
+                <img src="../static/images/logo.png" class="logo" alt="">
+                <h1>Ardour Login</h1>
+            </div>
+
+            <div class="info-txt">
+
+            </div>
+        </div>
+
+        <form method=post class="login-form">
+            <h2>Welcome</h2>
+            <p>Sign in to your account</p>
+            <dl class="login">
+                {{ render_field(form.username) }}
+                {{ render_field(form.password) }}
+            </dl>
+            <a href="#">forgot password ?</a>
+            <input type=submit class="btn" value=login>
+            <p>Don't have an account? <a href="#">sign up</a></p>
+        </form>
+    </div>
+
     
+
 </body>
 </html>
