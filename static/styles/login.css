@@ -7,7 +7,8 @@
 
 body{
     background: #845fc2;
-    background: linear-gradient(to left,  #845fc2, #270a4e);
+    background: linear-gradient(to left,  #5f4f6e, #270a4e);
+    
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -20,7 +21,8 @@ body{
     height: 80vh;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     align-self: center;
-    background: #58398d;
+    background: #58398d50;
+    backdrop-filter: blur(18px);
 }
 
 .illustration{
@@ -102,6 +104,30 @@ dt{
     margin-bottom: 2vh;
 }
 
+.circle, .circle1{
+
+    position: absolute;
+    background: #361b5850;
+    backdrop-filter: blur(18px);
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.circle{
+    width: 300px;
+    height: 300px;
+    right: 40%;
+    bottom: 10%;
+}
+
+.circle1{
+    width: 500px;
+    height: 500px;
+    right: 5%;
+    top: 5%;
+}
+
 @media screen and (max-width: 768px){
     .illustration{
         display: none;
@@ -110,5 +136,17 @@ dt{
     .login-page{
         display: flex;
         width: 95%;
-        background: #270a4e;
+        background: #522988;
+    }
+
+    body{
+        background: #845fc2;
+    }
 }
+
+@media screen and (max-width: 1024px){
+    .login-form{
+        flex: 2;
+    }
+}
+
